@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.recuperatorio.Dialogo;
 import com.example.recuperatorio.databinding.FragmentSlideshowBinding;
 
 public class SlideshowFragment extends Fragment {
@@ -24,8 +25,7 @@ public class SlideshowFragment extends Fragment {
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        Dialogo.mostrarDialogoBotones(getActivity());
         return root;
     }
 
