@@ -67,7 +67,7 @@ public class EstrenosAdapter extends RecyclerView.Adapter<EstrenosAdapter.ViewHo
                 @Override
                 public void onClick(View view) {
                     Bundle bundle= new Bundle();
-                   estreno= new Estrenos("La orca","3h","Aldo venturi","1978");
+                   //estreno= new Estrenos("La orca","3h","Aldo venturi","1978");
                     bundle.putSerializable("Mensaje", estreno);
                     //bundle.putSerializable("nota", "algo");
                     Navigation.findNavController(view).navigate(R.id.detallesEstrenos,bundle);
